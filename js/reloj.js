@@ -28,11 +28,7 @@
 
     }
     function agregarCeros(num){
-        if (num <= 0){
-            return "0"+num;
-        }else{
-            return num
-        }
+        return num <= 0 ? "o" + num :num
     }
 
 
