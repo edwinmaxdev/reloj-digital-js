@@ -1,0 +1,19 @@
+.caja{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.reloj{
+    margin: 0 auto;
+    border: 1px sold black;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(127, 231, 160);
+    text-align: center;
+    max-width: 60%;
+    margin-top: 20%;
+    padding: 10px;
+
+}animar{
+    color: red;
+    border: 5px solid black;
+}
