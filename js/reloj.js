@@ -8,7 +8,7 @@
 
         document.getElementById("horas").innerHTML = horas;
         
-        
+        document.getElementById("reloj").classList.toggle("animar");
 
 
         let meses = ["Ene", "feb", "mar", "abr", "may", "jun", "jul", "agos", "sept", "oct", "nov","dic"];
@@ -28,7 +28,7 @@
 
     }
     function agregarCeros(num){
-        return num <= 0 ? "o" + num :num
+        return num < 10 ? "o" + num :num;
     }
 
 

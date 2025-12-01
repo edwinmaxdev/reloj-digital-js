@@ -13,7 +13,8 @@
     margin-top: 20%;
     padding: 10px;
 
-}animar{
-    color: red;
+}
+.animar{
+    color: rgb(0, 98, 255);
     border: 5px solid black;
 }
