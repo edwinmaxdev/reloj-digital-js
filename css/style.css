@@ -4,17 +4,22 @@
 }
 .reloj{
     margin: 0 auto;
-    border: 1px sold black;
+    border: 5px solid #00ff41;
     border-radius: 15px;
-    color: white;
-    background-color: rgb(127, 231, 160);
+    color:white;
+    background-color: #001f3f;
     text-align: center;
-    max-width: 60%;
+    max-width: 50%;
     margin-top: 20%;
     padding: 10px;
+    font-size: 25px;
+
 
 }
 .animar{
-    color: rgb(0, 98, 255);
+    color:orange;
     border: 5px solid black;
+    background-color:rgba(55, 211, 232, 0.864) ;
 }
+
+

@@ -11,7 +11,7 @@
         document.getElementById("reloj").classList.toggle("animar");
 
 
-        let meses = ["Ene", "feb", "mar", "abr", "may", "jun", "jul", "agos", "sept", "oct", "nov","dic"];
+        let meses = ["Ene", "feb", "Mar", "Abr", "May", "Jun", "jul", "agos", "Sept", "Oct", "Nov","Dic"];
         let dias = ["domingo", "lunes", "martes","miercoles", "jueves", "viernes", "sabado"];
         
         
@@ -19,7 +19,7 @@
         let dia = dias[fechas.getDay()];
         let fec = fechas.getDate();
 
-        let dias_Semana = `${mes},${fec} ${dia}`;
+        let dias_Semana = `${mes}, ${fec} ${dia}`;
 
         document.getElementById("semanas").innerHTML = dias_Semana;
 
@@ -28,7 +28,7 @@
 
     }
     function agregarCeros(num){
-        return num < 10 ? "o" + num :num;
+        return num < 10 ? "0" + num :num;
     }
 
 
