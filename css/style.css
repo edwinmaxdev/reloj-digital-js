@@ -1,25 +1,95 @@
-.caja{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f0f;
+    background-image: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reloj {
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 60px 80px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-.reloj{
-    margin: 0 auto;
-    border: 5px solid #00ff41;
-    border-radius: 15px;
-    color:white;
-    background-color: #001f3f;
-    text-align: center;
-    max-width: 50%;
-    margin-top: 20%;
-    padding: 10px;
-    font-size: 25px;
-
-
-}
-.animar{
-    color:orange;
-    border: 5px solid black;
-    background-color:rgba(55, 211, 232, 0.864) ;
+    animation: entrada 0.8s ease-out;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
 }
 
+#horas {
+    font-size: 80px;
+    font-weight: bold;
+    color: #00ff88;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.6),
+                 0 0 40px rgba(0, 255, 136, 0.3);
+    font-family: 'Courier New', monospace;
+}
 
+#semanas {
+    font-size: 24px;
+    color: #c0c0c0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .reloj {
+        padding: 40px 60px;
+    }
+
+    #horas {
+        font-size: 50px;
+    }
+
+    #semanas {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reloj {
+        padding: 30px 40px;
+    }
+
+    #horas {
+        font-size: 35px;
+    }
+
+    #semanas {
+        font-size: 14px;
+    }
+}
